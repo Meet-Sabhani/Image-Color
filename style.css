@@ -5,42 +5,28 @@
 }
 
 .container {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.container img{
-    border: 1px solid #000;
+.container img {
+  width: 510px;
 }
 .container svg {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(1deg);
+  top: 47%;
+  left: 51%;
+  transform: translate(-50%, -50%);
 }
 
+.container svg:hover{
+    mix-blend-mode: multiply;
+}
 .part {
-  opacity: 0.7;
-  transition: 0.4s ease-in-out;
+  transition: .3s;
+  opacity: 0;
 }
-
 .part:hover {
-  /* opacity: .7; */
-}
-
-/* -------------------- second ----------------------  */
-
-.second {
-  position: relative;
-}
-.second svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.building-part{
-    opacity: 0;
-    transition: .6s ease-in-out;
-}
-.building-part:hover{
-    opacity: .7;
+  opacity: 1;
 }
